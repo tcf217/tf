@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(243, 189, 189);
+    </style>
+</head>
+<body >
+    <span class="bz">
+        <span>
+    <h2>姓名：谭超峰</h2><P></P>    
+    <h2>班级：通信1901</h2><P></P>
+    <h2>学号：201916180119</h2><p></p>
+    <h3>  谭超峰，男，20，白羊座，湖南耒阳人，喜欢听歌唱歌。</h3>
+    <a href="self.html"><h1>更多帅哥</h1></a><p></p>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+</head>
+<body>
+<div class="t"><img src="picture\QQ图片20201201151206.gif" alt="" /></div>
+</body>  
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>轮播图测试</title>
+    <!-- 外部导入Css文件，链接式 -->
+    <link type="text/css" rel="stylesheet" href="css/slideShow.css"/>    
+    </head>
+   
+        <style>
+         .bz {
+            text-align: center;
+            margin: auto;
+            display: inline-block;
+            width: 2080px;
+            height: 200px;
+            background-color: #d669ac;
+            color: #fff;
+ <style\>
+          
+/* id选择器 */
+            #hr1
+             {
+                 background-color: rgb(87, 192, 195);
+                 height: 2px;
+                 width: 75%;
+             }
+
+             /* 类选择器 */
+                .imgbox {      
+              border-top: 5px solid rgb(247, 203, 251);
+              /* 避免因窗口变化影响图片效果 */
+             text-align: center; 
+             width: 60%;
+             height: 40%;
+             margin: 0 auto;
+          }
+                }
+             .img {
+             width: 18%;
+              height: 350%;
+             margin: 0 auto;
+             display: none;
+         }
+    </style>
+    <body>
+
+        <!-- 建立一个div控件作为图片框 -->
+        <span class="imgBox">
+            <!-- alt：图片路径失败时替换显示内容 -->
+            <img class="img-slide img" src="picture\1.jpg" width="520px" height="700px"   alt="">
+            <img class="img-slide img" src="picture\2.jpg" width="520px" height="700px" alt="">
+            <img class="img-slide img" src="picture\3.jpg" width="520px" height="700px" alt=""> 
+            <img class="img-slide img" src="picture\4.jpg" width="520px" height="700px" alt=""> 
+        </span>
+    </body>
+    <script type="text/javascript">
+        // index：索引， len：长度
+        var index = 0, len;
+        // 类似获取一个元素数组
+        var imgBox = document.getElementsByClassName("img-slide");
+        len = imgBox.length;
+        imgBox[index].style.display = 'block';
+        // 逻辑控制函数
+        function slideShow() {
+            index ++;
+            // 防止数组溢出
+            if(index >= len) index = 0;
+            // 遍历每一个元素
+            for(var i=0; i<len; i++) {
+                imgBox[i].style.display = 'none';
+            }
+            // 每次只有一张图片显示
+            imgBox[index].style.display = 'block';
+        }
+        
+        // 定时器，间隔3s切换图片
+        setInterval(slideShow, 2000);
+        
+    </script>
+    
+</html>
+</body>
+</html>
